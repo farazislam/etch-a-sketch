@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.grid {
+    display: flex;
+    height: 640px;
+    width: 640px;
+    flex-wrap: wrap;
+    /* flex-basis: 100px; */
+}
+
+.gridSquare {
+    height: 40px;
+    width: 40px;
+    border: 1px solid black;
+}
+
+.gridSquare-hover {
+    background-color: blue;
+}
