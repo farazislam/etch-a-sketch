@@ -3,20 +3,19 @@
 }
 
 .grid {
-    display: flex;
+    border: 1px solid black;
     height: 960px;
     width: 960px;
+    display: flex;
     flex-wrap: wrap;
     align-content: center;
     justify-content: center;
-    /* flex-basis: 100px; */
 }
 
 .gridSquare {
     border: 1px solid black;
-    flex-grow: 1;
 }
 
 .gridSquare-hover {
-    background-color: blue;
+    opacity: 0;
 }
