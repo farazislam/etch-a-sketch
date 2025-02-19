@@ -17,8 +17,8 @@ function createGrid(number) {
     for(let i=0; i<gridSize; i++) {
         let square = document.createElement("div");
         square.classList.add('gridSquare');
-        square.style.height = `${960/number}px`;
-        square.style.width = `${960/number}px`;
+        square.style.height = `${958/number}px`;
+        square.style.width = `${958/number}px`;
 
         let randomColor = "#" + ((1 << 24) * Math.random() | 0).toString(16).padStart(6, "0")
         square.style.backgroundColor = randomColor;
