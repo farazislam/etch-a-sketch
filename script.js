@@ -1,13 +1,20 @@
 const grid = document.querySelector('.grid');
+const button = document.querySelector('.button')
 
-createGrid();
+createGrid(20);
 
-function createGrid() {
-    for(let i=0; i<256; i++) {
+function createGrid(number) {
+
+    const gridSize = number * number;
+
+    for(let i=0; i<gridSize; i++) {
         let square = document.createElement("div")
         square.classList.add('gridSquare')
-        square.addEventListener('mouseover', ()=> square.classList.toggle('gridSquare-hover'))
+        square.style.height = `${960/number}px`
+        square.style.width = `${960/number}px`
+        square.addEventListener('mouseover', ()=> square.classList.add('gridSquare-hover'))
 
         grid.appendChild(square);
     }
 }
+
